@@ -1,0 +1,37 @@
+@use 'variables' as *
+
+:root
+  --gold: #{$gold}
+  --gold-light: #{$gold-light}
+  --jade: #{$jade}
+  --ink: #{$ink}
+  --snow: #{$snow}
+  --font-display: var(--font-body)
+  --font-label: var(--font-body)
+
+*
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  background: $snow
+  color: $ink
+  font-family: var(--font-body), sans-serif
+  transition: background-color .25s ease, color .25s ease
+
+html[data-theme='dark'] body
+  background: #0c0e14
+  color: #e2e2eb
+
+button, input
+  font: inherit
+
+button, a
+  -webkit-tap-highlight-color: transparent
+
+::selection
+  background: rgba($gold, .28)
+

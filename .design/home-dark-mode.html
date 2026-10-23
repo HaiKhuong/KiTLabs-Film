@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tiên Giới Kỹ Thuật Số - Trang Chủ Đạo Tàng Phim</title>
+<!-- Material Symbols Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Design System Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Theme Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#0c0e14",
+            "surface": "#111319",
+            "surface-dim": "#111319",
+            "surface-bright": "#1e222d",
+            "surface-container-lowest": "#080a0f",
+            "surface-container-low": "#11141c",
+            "surface-container": "#151923",
+            "surface-container-high": "#1c212f",
+            "surface-container-highest": "#282e40",
+            "primary": "#f2ca50",
+            "primary-container": "#d4af37",
+            "primary-fixed": "#ffe088",
+            "primary-fixed-dim": "#e9c349",
+            "on-primary": "#241a00",
+            "on-primary-container": "#241a00",
+            "secondary": "#6fffe8",
+            "secondary-container": "#00e5cc",
+            "secondary-fixed": "#41fce2",
+            "secondary-fixed-dim": "#00dfc6",
+            "on-secondary": "#003730",
+            "on-secondary-fixed": "#00201b",
+            "tertiary": "#eacc76",
+            "tertiary-container": "#ccb05e",
+            "tertiary-fixed": "#ffe088",
+            "tertiary-fixed-dim": "#e1c46f",
+            "on-tertiary": "#3c2f00",
+            "on-background": "#e2e2eb",
+            "on-surface": "#e2e2eb",
+            "on-surface-variant": "#d0c5af",
+            "outline": "#99907c",
+            "outline-variant": "#4d4635",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "on-error": "#690005"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero": ["Playfair Display", "serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Space Grotesk", "sans-serif"],
+            "display-hero-mobile": ["Playfair Display", "serif"],
+            "label-sm": ["Space Grotesk", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Space Grotesk", "sans-serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .gold-glow {
+      box-shadow: 0 8px 32px -4px rgba(242, 202, 80, 0.4);
+    }
+    .gold-glow-subtle {
+      box-shadow: 0 4px 20px -2px rgba(242, 202, 80, 0.25);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ffe088 0%, #f2ca50 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .metallic-badge {
+      background: linear-gradient(135deg, #ffe088 0%, #d4af37 60%, #918355 100%);
+    }
+    /* Dark smooth custom scrollbars */
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0c0e14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #33343b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4af37;
+    }
+  </style>
+</head>
+<body class="bg-[#0c0e14] text-[#e2e2eb] antialiased selection:bg-primary selection:text-black min-h-screen">
+<!-- TOP APP BAR NAVIGATION (Ultra-Luxurious Dark Glassmorphism) -->
+<header class="absolute top-0 left-0 right-0 z-50 bg-[#0c0e14]/75 backdrop-blur-xl border-b border-white/10 px-6 lg:px-12 py-3.5 transition-all duration-200">
+<div class="max-w-[1400px] mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-white group" href="#">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary-container to-primary-fixed flex items-center justify-center text-[#1a170f] shadow-sm group-hover:rotate-6 transition-transform">
+<svg class="w-5 h-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div>
+<h2 class="text-white text-base lg:text-lg font-bold leading-tight tracking-[-0.015em] font-headline-sm">TIÊN GIỚI KỸ THUẬT SỐ</h2>
+<span class="text-[10px] font-label-sm uppercase tracking-widest text-primary-fixed block -mt-0.5">Vạn Giới Trực Thao</span>
+</div>
+</a>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="text-primary font-bold text-sm leading-normal border-b-2 border-primary pb-1" href="#">Trang Chủ</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#linh-thach">Bảng Xếp Hạng</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#dao-tang">Đạo Tàng Phim</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Tu Tiên Tông Môn</a>
+<a class="text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#linh-thach">Linh Thạch Các</a>
+</nav>
+</div>
+<div class="flex items-center gap-4 lg:gap-5">
+<!-- Search input -->
+<label class="hidden sm:flex flex-col min-w-44 lg:min-w-64 !h-10">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full border border-white/10 hover:border-primary/60 transition-colors bg-white/[0.06] backdrop-blur-md overflow-hidden focus-within:border-primary/80 focus-within:ring-1 focus-within:ring-primary/40">
+<div class="text-slate-400 flex items-center justify-center pl-3.5" data-icon="magnifying_glass">
+<span class="material-symbols-outlined text-lg">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-none border-none bg-transparent h-full placeholder:text-slate-400 px-3 rounded-l-none text-sm font-normal" placeholder="Tìm công pháp, phim tu chân..." value=""/>
+</div>
+</label>
+<!-- Active Theme Indicator Toggle -->
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-white/[0.07] border border-white/10 text-xs text-primary-fixed font-semibold" title="Chế độ Hắc Dạ (Dark Mode) đang bật">
+<span class="material-symbols-outlined text-sm text-primary">dark_mode</span>
+<span class="hidden md:inline text-[11px] font-label-sm uppercase tracking-wider text-slate-300">Hắc Dạ</span>
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#6fffe8]"></span>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 rounded-xl h-10 px-4 bg-gradient-to-r from-primary to-primary-container hover:brightness-110 transition-all text-[#1a170f] text-sm font-bold gold-glow-subtle">
+<span class="material-symbols-outlined text-sm font-bold">lock_open</span>
+<span class="truncate">Đăng Nhập Đạo Hữu</span>
+</button>
+<div class="relative cursor-pointer group">
+<img class="w-10 h-10 rounded-full object-cover border-2 border-primary/70 shadow-sm" data-alt="Celestial daoist cultivation master portrait adorned in high-tech illuminated cyan and gold embroidery flowing spiritual talisman collar, bright serene lighting, digital anime masterpiece aesthetic with snow white clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoU1hwlAk2GyQncWAObj1N9L--E_UQYEiWbUaoEzJFdudl32RHcEN7xerJkpWCcNyBQssNgquCfLnyPdcU8Vz9JGgSIg_8T1YO0fVj-g_SFZ14NjDAMPtfSPToxg4I6rS8IKQ2dZ6fc7HYZeRAnNiVBysejZBQVDp3YjcMRHuSqR-qdekxhz19pNqpH5A6mej7KPg08FQuGUh59QeSuroBNCzgJ-GrNYOnGxk5SiXepv41YS7HYqJV"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-secondary border-2 border-[#0c0e14] rounded-full shadow-[0_0_6px_#6fffe8]"></span>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- 1. HERO BANNER (~60vh SPLIT SLIDER LAYOUT - Seamless Deep Obsidian Blend) -->
+<section class="relative w-full min-h-0 flex items-center justify-center overflow-hidden bg-[#0c0e14] text-white aspect-[21/9]">
+<!-- Full-bleed Cinematic Backdrop Image -->
+<div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+<img alt="Vạn Cổ Kiếm Thần: Thiên Đạo Quy Tông Cinematic Cyber Xianxia Poster" class="w-full h-full object-cover object-center scale-105 duration-700 ease-out transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1WSzPV5RubrikrlZv5ofbwoiEWrXqEssXp4U-cDze_CDH8-uDrzTOl6i5lVLKrd-02hejv3uqMDBm3dAxeXd8xERn6u1y2zLEQNW_yqqXucWVHhR_LOAGSo-JdUFNnENl_4JzUXKhVuc8N7B3ITGX1YkpkANH1zbZTAUXmSOS9BqumvC3P5CN3FfBiuIp1AutbVCZyExDdyVtN1JcIjH1wDNjEqe2mWMaKtjCTQNbv-8LWCG51I3UosWNA"/>
+<!-- Cinematic multi-stop gradient overlays seamless with #0c0e14 dark canvas -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#0c0e14] via-[#0c0e14]/85 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0c0e14] via-[#0c0e14]/40 to-[#0c0e14]/60"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_25%,rgba(242,202,80,0.18),transparent_60%)]"></div>
+</div>
+<!-- Content Container inside Full-Width 16:9 Banner -->
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 lg:px-12 pt-16 pb-8 lg:pt-20 lg:pb-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+<div class="lg:col-span-8 flex flex-col gap-3.5 max-w-[42vw]">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-[#1a170f] text-xs font-bold tracking-wider uppercase font-label-sm shadow-md gold-glow-subtle flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>Độc Quyền 4K HDR
+          </span>
+<span class="px-2 py-0.5 rounded-md text-xs font-semibold bg-white/10 backdrop-blur-md text-primary-fixed border border-primary/30">Xuyên Không</span>
+<span class="px-2 py-0.5 rounded-md text-xs font-semibold bg-white/10 backdrop-blur-md text-primary-fixed border border-primary/30">Kiếm Đạo Đỉnh Phong</span>
+<span class="px-2 py-0.5 rounded-md text-xs font-semibold bg-secondary/15 backdrop-blur-md text-secondary border border-secondary/30">Cơ Giáp Tiên Hiệp</span>
+<span class="px-2 py-0.5 rounded-md text-xs font-bold bg-white/15 backdrop-blur-md text-white border border-white/20">Chương Mới: Tập 142</span>
+</div>
+<div>
+<h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight font-display-hero tracking-tight drop-shadow-md">
+            VẠN CỔ KIẾM THẦN: THIÊN ĐẠO QUY TÔNG
+          </h1>
+<p class="text-xs sm:text-sm text-slate-300 font-body-md mt-2 leading-relaxed max-w-2xl drop-shadow-sm line-clamp-2">
+            Thiên hà đứt đoạn, vạn pháp tiêu tan. Thiếu niên mang trong mình linh mạch số hóa thái cổ, ngự kiếm xuyên qua cửu thiên cơ giáp, tái định càn khôn tiên giới trong đại kiếp nạn vạn niên.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-3 py-1.5 text-xs text-slate-300 font-medium border-y border-white/10 max-w-2xl">
+<div class="flex items-center gap-1.5 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">star</span>
+<span>9.9/10 (248k Tiên Hữu)</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-slate-400">visibility</span>
+<span>120 triệu lượt ngự lãm</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-slate-400">high_quality</span>
+<span>4K Ultra Vision</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-slate-400">spatial_audio</span>
+<span>Dolby Atmos</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1">
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-primary-fixed via-primary to-primary-container hover:brightness-110 transition-all text-[#1a170f] font-bold text-xs sm:text-sm shadow-lg gold-glow cursor-pointer">
+<span class="material-symbols-outlined text-lg font-bold">bolt</span>
+<span>⚡ Xem Ngay (Tập 142)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md transition-all text-white text-xs sm:text-sm font-semibold border border-white/15 cursor-pointer">
+<span class="material-symbols-outlined text-base">bookmark_add</span>
+<span>+ Lưu Đạo Tàng</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-row justify-end gap-3 items-end pb-4 absolute right-6 lg:right-12 bottom-[20%] z-20">
+<div class="group relative w-14 aspect-video rounded-lg overflow-hidden shrink-0 border border-white/20 bg-[#151923] cursor-pointer shadow-md hover:scale-105 hover:border-primary transition-all duration-300">
+<img alt="Đại Quản Gia Là Ma Hoàng" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASefdMMzPqX2pq89LkUg5SNNiZUMrIKJ1EYostKV1Ni3SPMKy5JOyyI8jSIPiqP9GgyDvb3FntdWO9SQDXf5G0CCySaPbkt9Lwf-FUKPEJc-lpRGCdXNCKKBxtMQlgnT_9cqyEKp1kMG7FOiq1pxtuP0zrXf4-iryYihmB-1xDn798LE2lRC9Be5dHSZq6KyXCwN7s4942rsf0cdJd-sJqjvePiJyXhCbZEImYQVU3yE26Ws51em6u"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xs">play_circle</span>
+</div>
+</div>
+<div class="group relative w-14 aspect-video rounded-lg overflow-hidden shrink-0 border border-white/20 bg-[#151923] cursor-pointer shadow-md hover:scale-105 hover:border-primary transition-all duration-300">
+<img alt="Trọng Sinh Đô Thị Tu Tiên" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XvalYf4gIPwdsv1EVwsnB_PlaaY7yS4DMO9xDGzOC4rR0scMmHXThTtmgaDTjYVSHyPLuBJZFe09-hd_V79UhZgLyPANOVdFaHyZX7o4OMwQv3BNplz6D-YaJZSN9bBjpGH6_arncrcdnOVvmFaEE1s8YzpOMvi78N7uprXZUr5WAnsf8Fo9cgkSSs9VuEgmc81tfuv7h-cUyqBDS3KS2KTDKbfL2Qwc66Xe5fj0MjiEy2zbCRxSgQHew"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xs">play_circle</span>
+</div>
+</div>
+<div class="group relative w-14 aspect-video rounded-lg overflow-hidden shrink-0 border border-white/20 bg-[#151923] cursor-pointer shadow-md hover:scale-105 hover:border-primary transition-all duration-300">
+<img alt="Bách Luyện Thành Thần" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UZVX0qgF2TafJxM64cLTcPBdYZR2npNkQo3SbBczJyZNhag4ajyOxlaDyhv1SFMmFvGzaJwWkZ2vhwvvrFYX4W_ChRUN3o9KhC6Pimp-mL-AOHs3-IRnsVEqAGGT6qzhvREMFyhbSBDv8E2-Oj051PL4pIjUt-bb_ji-lifXlRN3H7V4mortE4-GX2vEjQrY3za_7B6jzEsguV8BxrpomX7dPsU8n7WIljbABAejFzjpLjuTZfrHLooQ"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xs">play_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#0c0e14] to-transparent pointer-events-none z-10"></div>
+</section>
+<!-- 2. GENRE FILTER PILLS & SECTION: ĐẠO TÀNG PHIM (Dark Obsidian Luxury Grid) -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-8" id="dao-tang">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-3 border-b border-white/10">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none flex-1">
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-bold transition-all bg-gradient-to-r from-primary to-primary-container text-[#1a170f] gold-glow-subtle shadow-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#1a170f]"></span>Tất Cả
+      </button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Tu Tiên Chưởng Môn</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Kiếm Đạo Đỉnh Phong</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Cơ Giáp Tiên Hiệp</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Trọng Sinh Báo Thù</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Xuyên Không Di Giới</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Huyền Huyễn Tu Chân</button>
+<button class="shrink-0 px-4 py-2 rounded-xl text-xs font-medium transition-all bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50">Đan Đạo Dị Hỏa</button>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:border-primary/60 transition-all text-xs font-bold text-white shadow-xs cursor-pointer">
+<span class="material-symbols-outlined text-sm text-primary">tune</span>
+<span>Sắp Xếp: Mới Nhất</span>
+<span class="material-symbols-outlined text-xs text-slate-400">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Luxury 4-Card Grid in Dark Mode -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Poster Đại Quản Gia Là Ma Hoàng" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDO1bl18dUufsXtb3pBw1aQNYOKn5BVua6T8d4ujecjCizdN2umGGVFUvI788aelDgLtQ5M5J51vM4rSC8Bl-aGSymRyxekQWvFdUHhmwkGsAWUqYBkmYBOcP-Lfo1W03WWbRPOE1FUhA0gLA4_e-licLhsgfdP2XEOMI4lBW6I80TGcoex8YdZh3oZSBsdsnOaTDpDS6jbdgBXUrcpJjR_x0y1UAJD0NCUfsf24QKd7z4LRElTBDR"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold metallic-badge text-[#1a170f] shadow-sm uppercase tracking-wider">HOT</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 120/120</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>45.2M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Đại Quản Gia Là Ma Hoàng</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Trọn bộ 120 tập</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Poster Trọng Sinh Đô Thị Tu Tiên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XvalYf4gIPwdsv1EVwsnB_PlaaY7yS4DMO9xDGzOC4rR0scMmHXThTtmgaDTjYVSHyPLuBJZFe09-hd_V79UhZgLyPANOVdFaHyZX7o4OMwQv3BNplz6D-YaJZSN9bBjpGH6_arncrcdnOVvmFaEE1s8YzpOMvi78N7uprXZUr5WAnsf8Fo9cgkSSs9VuEgmc81tfuv7h-cUyqBDS3KS2KTDKbfL2Qwc66Xe5fj0MjiEy2zbCRxSgQHew"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary text-[#00201b] shadow-sm uppercase tracking-wider">MỚI</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 85</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>38.6M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Trọng Sinh Đô Thị Tu Tiên</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 85 • Lồng tiếng</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Poster Bách Luyện Thành Thần" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UZVX0qgF2TafJxM64cLTcPBdYZR2npNkQo3SbBczJyZNhag4ajyOxlaDyhv1SFMmFvGzaJwWkZ2vhwvvrFYX4W_ChRUN3o9KhC6Pimp-mL-AOHs3-IRnsVEqAGGT6qzhvREMFyhbSBDv8E2-Oj051PL4pIjUt-bb_ji-lifXlRN3H7V4mortE4-GX2vEjQrY3za_7B6jzEsguV8BxrpomX7dPsU8n7WIljbABAejFzjpLjuTZfrHLooQ"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-fixed text-[#1a170f] shadow-sm uppercase tracking-wider">VIP</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 112</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>29.8M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Bách Luyện Thành Thần</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 112 • 4K HDR</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Poster Tiên Nghịch: Ma Đạo Khởi Nguyên" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Nrd3gm41GXqOvJs0-a4tTwK5Z31tf-DXIAZ0J0sfCDbFHLTTaEGL4sBECMsn8zHWoj-FdB9hsAJavWrGHaxVTTIQ4s_iKeywPIrLZk6lybbirVtlViszGRXhSjvkfzoduDo3v9J849qnNKv458hntSLrl5gYV5totq7w20LAUGxICf3X-1kFzeqGbd4m7lH2I9rTYRuqN1V36v10EYmtWNZhUbeTpl955j66G-Ai9CoE3pSmnz3y"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#93000a] text-[#ffdad6] shadow-sm uppercase tracking-wider">HOT</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 48</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>52.1M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Tiên Nghịch: Ma Đạo Khởi Nguyên</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 48 • Cực phẩm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Vạn Cổ Kiếm Thần: Thiên Đạo Quy Tông" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1WSzPV5RubrikrlZv5ofbwoiEWrXqEssXp4U-cDze_CDH8-uDrzTOl6i5lVLKrd-02hejv3uqMDBm3dAxeXd8xERn6u1y2zLEQNW_yqqXucWVHhR_LOAGSo-JdUFNnENl_4JzUXKhVuc8N7B3ITGX1YkpkANH1zbZTAUXmSOS9BqumvC3P5CN3FfBiuIp1AutbVCZyExDdyVtN1JcIjH1wDNjEqe2mWMaKtjCTQNbv-8LWCG51I3UosWNA"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold metallic-badge text-[#1a170f] shadow-sm uppercase tracking-wider">TOP 1</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 142</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>120M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Vạn Cổ Kiếm Thần: Thiên Đạo Quy Tông</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 142 • Độc quyền 4K</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Võ Thần Chúa Tể" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASefdMMzPqX2pq89LkUg5SNNiZUMrIKJ1EYostKV1Ni3SPMKy5JOyyI8jSIPiqP9GgyDvb3FntdWO9SQDXf5G0CCySaPbkt9Lwf-FUKPEJc-lpRGCdXNCKKBxtMQlgnT_9cqyEKp1kMG7FOiq1pxtuP0zrXf4-iryYihmB-1xDn798LE2lRC9Be5dHSZq6KyXCwN7s4942rsf0cdJd-sJqjvePiJyXhCbZEImYQVU3yE26Ws51em6u"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-fixed text-[#1a170f] shadow-sm uppercase tracking-wider">VIP</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 412</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>68.4M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Võ Thần Chúa Tể: Cửu Giới Chi Thần</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 412 • Huyễn Tưởng</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Phàm Nhân Tu Tiên: Tiên Giới Thiên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVac8ahtE_7RCtxcig-NrQYRRUi85UrBx8vCX5Cvd03nuNW6dd802DUwjJUBx3-tsky4IegVEJDfOFsFqvJMPgT7HJzciOPZI1uVoBRki9rVCWynnRUMguwkh611Hu7c02Jo5sCX4AEq9yX5C8Vni6Ob9GW-cSWtKDL9XJZ8QMXdos-cRI8eEXH1PK2s_CikYfYB1O4IufYhjyEwNq0iMR8avnJGNC7a_8Uz78RzyQQmil9d5QNufu"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold metallic-badge text-[#1a170f] shadow-sm uppercase tracking-wider">SIÊU PHẨM</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 96</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>91.2M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Phàm Nhân Tu Tiên: Tiên Giới Thiên</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 96 • Siêu phẩm đồ họa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Thôn Phệ Tinh Không: Tinh Thần Biến" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMXLORW6YLZIE5DhAjPGYf8Ar9MCexOTEZZUcuXP0USkEOXOnJfhlbgFfPlRV_sO07Txig4bSk3zxXcgRIFQQh7Z_r9CaoJnIc_VXrYw1R0_2ymua9U7qsOANrg6K4VKhtIro7gEQUNBs_fz_gpXie8Ev0gNBkffSOkgMdPuWx1kkmArFaX-lkoiiEnSHuLnrAQ9QOH4FemCX1XFBwdxcctB2eOmjnk7rqm9GoncOLNMqakJ4gFZ9U"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary text-[#00201b] shadow-sm uppercase tracking-wider">CƠ GIÁP</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 134</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>77.5M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Thôn Phệ Tinh Không: Vạn Giới Hạm</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 134 • Khoa huyễn tu chân</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Cửu Tinh Bá Thể Quyết" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoU1hwlAk2GyQncWAObj1N9L--E_UQYEiWbUaoEzJFdudl32RHcEN7xerJkpWCcNyBQssNgquCfLnyPdcU8Vz9JGgSIg_8T1YO0fVj-g_SFZ14NjDAMPtfSPToxg4I6rS8IKQ2dZ6fc7HYZeRAnNiVBysejZBQVDp3YjcMRHuSqR-qdekxhz19pNqpH5A6mej7KPg08FQuGUh59QeSuroBNCzgJ-GrNYOnGxk5SiXepv41YS7HYqJV"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#93000a] text-[#ffdad6] shadow-sm uppercase tracking-wider">BÁ ĐẠO</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 73</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>34.1M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Cửu Tinh Bá Thể Quyết: Luyện Thể</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 73 • Nhiệt huyết sát phạt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 10 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Hoàn Mỹ Thế Giới" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDPbRr0tGzHiRLrWPayPQZu_osAZ3jGDOlupQGvY7FBJNkTA9mEfLE_b9_p5fW7xTA_pYjtUQqfy-GyylUB0Ba4TbmBzeU2K0kfajhanIz8-8M9FjeXXeozq4zKzx36jkXrxr8z0bow3ni0VO6o676lKJfnPK48VYxakadpkgsi7tNnnmLSiHRrMlWp1wOMFmboJxtFGZgE7VKjasfYvgN0yCmCN2zRmVeFbFs6Lo1oM1x0mWPiWuC"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold metallic-badge text-[#1a170f] shadow-sm uppercase tracking-wider">ĐỈNH PHONG</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 188</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>88.9M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Hoàn Mỹ Thế Giới: Hoang Thiên Đế</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 188 • Chí Tôn Cốt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 11 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Già Thiên: Đăng Thiên Lộ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMFbuVZECLjEd9jsVJ-Rq8wlVoTvQyT_ksCX3IfvjfHIDp4aL0_6cTILyBCdoPOJWcTHJEdNqy77rpdrQBJ4RkkFKFlEEsDGI9abm5fGD-pdq9EwiNxtvdaFPBNT3ohGldjFMmEFLgvR8HNPWmhV7sBix4nM1a2NtFTTJ6hdPDOzodXuJaEnT7v5gUHkXCWUuQsOtfznjzFKJesLALtc_cF4cLDN48piw-I7pxYUk7e2BaRb3sS_zK"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-fixed text-[#1a170f] shadow-sm uppercase tracking-wider">THẦN THOẠI</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 62</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>41.0M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Già Thiên: Đăng Thiên Lộ Đạp Ca Hành</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 62 • Cửu Long Kéo Quan</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 12 -->
+<div class="group relative rounded-2xl bg-[#151923] border border-white/[0.06] transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 flex flex-col overflow-hidden w-full p-2.5">
+<div class="relative aspect-video w-full overflow-hidden bg-[#0c0e14] rounded-xl">
+<img alt="Đấu Phá Thương Khung: Niên Phiên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDO1bl18dUufsXtb3pBw1aQNYOKn5BVua6T8d4ujecjCizdN2umGGVFUvI788aelDgLtQ5M5J51vM4rSC8Bl-aGSymRyxekQWvFdUHhmwkGsAWUqYBkmYBOcP-Lfo1W03WWbRPOE1FUhA0gLA4_e-licLhsgfdP2XEOMI4lBW6I80TGcoex8YdZh3oZSBsdsnOaTDpDS6jbdgBXUrcpJjR_x0y1UAJD0NCUfsf24QKd7z4LRElTBDR"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary text-[#00201b] shadow-sm uppercase tracking-wider">DỊ HỎA</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-black/75 backdrop-blur-md text-white shadow-sm border border-white/10">Tập 108</span>
+</div>
+<div class="absolute top-2.5 right-2.5">
+<button class="w-8 h-8 flex items-center justify-center hover:text-red-400 transition-colors cursor-pointer drop-shadow-md text-primary p-0" title="Yêu thích"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+</div>
+<div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1 shadow-sm border border-white/10">
+<span class="material-symbols-outlined text-xs text-primary">visibility</span>
+<span>98.4M</span>
+</div>
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 rounded-full bg-primary text-[#1a170f] flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform gold-glow">
+<span class="material-symbols-outlined text-2xl font-bold">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="pt-3 pb-1 px-1 flex flex-col flex-1 justify-between gap-1 w-full">
+<div>
+<h3 class="text-base font-bold text-white group-hover:text-primary transition-colors truncate">Đấu Phá Thương Khung: Già Nam Học Viện</h3>
+<div class="flex items-center justify-between text-xs text-slate-400 mt-1.5">
+<span class="text-[11px] text-[#d0c5af]">Đang phát Tập 108 • Dị Hỏa Xuất Thế</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination in Dark Mode -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-10 pt-6 border-t border-white/10">
+<button class="flex items-center gap-1 px-4 py-2 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50 transition-all cursor-pointer shadow-xs">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span>Trước</span>
+</button>
+<button class="w-9 h-9 rounded-xl text-xs font-bold bg-gradient-to-r from-primary to-primary-container text-[#1a170f] gold-glow-subtle shadow-md flex items-center justify-center cursor-pointer">
+      1
+    </button>
+<button class="w-9 h-9 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50 transition-all flex items-center justify-center cursor-pointer">
+      2
+    </button>
+<button class="w-9 h-9 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50 transition-all flex items-center justify-center cursor-pointer">
+      3
+    </button>
+<span class="px-1.5 text-xs text-slate-400 font-bold">...</span>
+<button class="w-9 h-9 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50 transition-all flex items-center justify-center cursor-pointer">
+      12
+    </button>
+<button class="flex items-center gap-1 px-4 py-2 rounded-xl text-xs font-semibold bg-white/[0.05] hover:bg-white/[0.12] text-slate-300 hover:text-white border border-white/10 hover:border-primary/50 transition-all cursor-pointer shadow-xs">
+<span>Sau</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- 3. SECTION: BẢNG XẾP HẠNG LINH THẠCH & TIÊN HỮU (Ultra-Luxurious Dark Widget) -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-12" id="linh-thach">
+<div class="grid grid-cols-1 gap-8 items-start lg:grid-cols-10">
+<!-- Left Side: Leaderboard Movies by Donated Spirit Stones -->
+<div class="bg-[#131722] p-6 lg:p-8 rounded-2xl border border-white/10 shadow-xl lg:col-span-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-white/10 relative z-10">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">diamond</span>
+<span class="text-xs uppercase tracking-widest font-label-sm font-bold text-primary">Linh Thạch Bài Hàng Bảng</span>
+</div>
+<h3 class="text-xl lg:text-2xl font-bold font-headline-md text-white mt-1">
+            Phim Được Đạo Hữu Cống Hiến Nhiều Nhất
+          </h3>
+</div>
+<div class="flex items-center gap-1 bg-[#0c0e14] p-1 rounded-xl text-xs font-semibold border border-white/10">
+<button class="px-3 py-1.5 rounded-lg bg-white/15 text-white shadow-xs font-bold">Hôm Nay</button>
+<button class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors">Tuần Này</button>
+<button class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors">Toàn Mùa</button>
+</div>
+</div>
+<!-- Leaderboard Rows -->
+<div class="flex flex-col divide-y divide-white/[0.07] relative z-10">
+<!-- Row 1 -->
+<div class="py-4 flex items-center justify-between gap-4 hover:bg-white/[0.04] px-3 rounded-xl transition-colors">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-8 h-8 rounded-lg metallic-badge text-[#1a170f] font-black text-sm flex items-center justify-center shrink-0 shadow-sm">
+              1
+            </div>
+<img class="w-12 h-14 object-cover rounded-lg shrink-0 border border-white/10" data-alt="Anime cultivation master avatar headshot with radiant golden crown, serene digital expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVac8ahtE_7RCtxcig-NrQYRRUi85UrBx8vCX5Cvd03nuNW6dd802DUwjJUBx3-tsky4IegVEJDfOFsFqvJMPgT7HJzciOPZI1uVoBRki9rVCWynnRUMguwkh611Hu7c02Jo5sCX4AEq9yX5C8Vni6Ob9GW-cSWtKDL9XJZ8QMXdos-cRI8eEXH1PK2s_CikYfYB1O4IufYhjyEwNq0iMR8avnJGNC7a_8Uz78RzyQQmil9d5QNufu"/>
+<div class="min-w-0">
+<h4 class="text-sm font-bold text-white truncate group-hover:text-primary">Vạn Cổ Kiếm Thần: Thiên Đạo Quy Tông</h4>
+<p class="text-xs text-[#d0c5af] mt-0.5">3.480.000 Cực Phẩm Linh Thạch • 14.2k Lượt Tặng</p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="hidden sm:inline-block text-xs font-bold text-primary px-3 py-1 rounded-full bg-primary/15 border border-primary/30">+15% Hôm Nay</span>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-primary to-primary-container hover:brightness-110 transition-colors text-xs font-bold text-[#1a170f] shadow-md">
+<span class="material-symbols-outlined text-sm font-bold">stars</span>
+<span>Tặng Linh Thạch</span>
+</button>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="py-4 flex items-center justify-between gap-4 hover:bg-white/[0.04] px-3 rounded-xl transition-colors">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-slate-700 text-slate-200 font-black text-sm flex items-center justify-center shrink-0 border border-slate-600">
+              2
+            </div>
+<img alt="Poster TRỌNG SINH ĐÔ THỊ TU TIÊN" class="w-12 h-14 object-cover rounded-lg shrink-0 border border-white/10" src="https://lh3.googleusercontent.com/aida/AEtjO1XvalYf4gIPwdsv1EVwsnB_PlaaY7yS4DMO9xDGzOC4rR0scMmHXThTtmgaDTjYVSHyPLuBJZFe09-hd_V79UhZgLyPANOVdFaHyZX7o4OMwQv3BNplz6D-YaJZSN9bBjpGH6_arncrcdnOVvmFaEE1s8YzpOMvi78N7uprXZUr5WAnsf8Fo9cgkSSs9VuEgmc81tfuv7h-cUyqBDS3KS2KTDKbfL2Qwc66Xe5fj0MjiEy2zbCRxSgQHew"/>
+<div class="min-w-0">
+<h4 class="text-sm font-bold text-white truncate">Trọng Sinh Đô Thị Tu Tiên</h4>
+<p class="text-xs text-[#d0c5af] mt-0.5">2.910.000 Cực Phẩm Linh Thạch • 11.8k Lượt Tặng</p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="hidden sm:inline-block text-xs font-bold text-secondary px-3 py-1 rounded-full bg-secondary/15 border border-secondary/30">+8% Hôm Nay</span>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/[0.08] hover:bg-primary hover:text-black transition-all text-xs font-bold text-white border border-white/10">
+<span class="material-symbols-outlined text-sm">stars</span>
+<span>Tặng Linh Thạch</span>
+</button>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="py-4 flex items-center justify-between gap-4 hover:bg-white/[0.04] px-3 rounded-xl transition-colors">
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-amber-900/40 text-amber-300 font-black text-sm flex items-center justify-center shrink-0 border border-amber-500/40">
+              3
+            </div>
+<img alt="Poster BÁCH LUYỆN THÀNH THẦN" class="w-12 h-14 object-cover rounded-lg shrink-0 border border-white/10" src="https://lh3.googleusercontent.com/aida/AEtjO1UZVX0qgF2TafJxM64cLTcPBdYZR2npNkQo3SbBczJyZNhag4ajyOxlaDyhv1SFMmFvGzaJwWkZ2vhwvvrFYX4W_ChRUN3o9KhC6Pimp-mL-AOHs3-IRnsVEqAGGT6qzhvREMFyhbSBDv8E2-Oj051PL4pIjUt-bb_ji-lifXlRN3H7V4mortE4-GX2vEjQrY3za_7B6jzEsguV8BxrpomX7dPsU8n7WIljbABAejFzjpLjuTZfrHLooQ"/>
+<div class="min-w-0">
+<h4 class="text-sm font-bold text-white truncate">Bách Luyện Thành Thần</h4>
+<p class="text-xs text-[#d0c5af] mt-0.5">2.140.000 Cực Phẩm Linh Thạch • 9.5k Lượt Tặng</p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="hidden sm:inline-block text-xs font-bold text-tertiary px-3 py-1 rounded-full bg-tertiary/15 border border-tertiary/30">+12% Hôm Nay</span>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/[0.08] hover:bg-primary hover:text-black transition-all text-xs font-bold text-white border border-white/10">
+<span class="material-symbols-outlined text-sm">stars</span>
+<span>Tặng Linh Thạch</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Top Tiên Hữu Tu Luyện & Tu Vi Widget -->
+<div class="lg:col-span-4 bg-gradient-to-b from-[#151923] to-[#10131c] p-6 lg:p-7 rounded-2xl border border-primary/25 shadow-xl flex flex-col gap-5 relative overflow-hidden">
+<div class="flex items-center justify-between pb-3 border-b border-white/10">
+<div>
+<span class="text-[11px] font-label-sm font-bold uppercase text-primary tracking-widest">Tiên Bảng Đệ Nhất</span>
+<h4 class="text-lg font-bold font-headline-sm text-white">Tiên Hữu Tu Luyện Tích Cực</h4>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">military_tech</span>
+</div>
+</div>
+<!-- User Cards -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-primary/40 transition-colors shadow-xs">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-primary" data-alt="Avatar portrait of high tech cultivation female master with serene silver hair and glowing golden circlet, pristine white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMXLORW6YLZIE5DhAjPGYf8Ar9MCexOTEZZUcuXP0USkEOXOnJfhlbgFfPlRV_sO07Txig4bSk3zxXcgRIFQQh7Z_r9CaoJnIc_VXrYw1R0_2ymua9U7qsOANrg6K4VKhtIro7gEQUNBs_fz_gpXie8Ev0gNBkffSOkgMdPuWx1kkmArFaX-lkoiiEnSHuLnrAQ9QOH4FemCX1XFBwdxcctB2eOmjnk7rqm9GoncOLNMqakJ4gFZ9U"/>
+<span class="absolute -bottom-1 -right-1 text-[10px] font-bold px-1 rounded metallic-badge text-[#1a170f]">#1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold text-white truncate">Bắc Minh Kiếm Tiên</h5>
+<p class="text-xs text-primary font-medium">Cảnh giới: Đại Thừa Viên Mãn</p>
+</div>
+<span class="text-xs font-bold text-slate-300">1,420 giờ</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-secondary/40 transition-colors shadow-xs">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-secondary/50" data-alt="Avatar portrait of young male anime swordsman with cyan high-tech glowing talisman on cheek, white cyber robes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDPbRr0tGzHiRLrWPayPQZu_osAZ3jGDOlupQGvY7FBJNkTA9mEfLE_b9_p5fW7xTA_pYjtUQqfy-GyylUB0Ba4TbmBzeU2K0kfajhanIz8-8M9FjeXXeozq4zKzx36jkXrxr8z0bow3ni0VO6o676lKJfnPK48VYxakadpkgsi7tNnnmLSiHRrMlWp1wOMFmboJxtFGZgE7VKjasfYvgN0yCmCN2zRmVeFbFs6Lo1oM1x0mWPiWuC"/>
+<span class="absolute -bottom-1 -right-1 text-[10px] font-bold px-1 rounded bg-slate-700 text-slate-200">#2</span>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold text-white truncate">Thanh Vân Đạo Trưởng</h5>
+<p class="text-xs text-secondary font-medium">Cảnh giới: Hóa Thần Tầng 9</p>
+</div>
+<span class="text-xs font-bold text-slate-300">1,180 giờ</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.04] border border-white/10 hover:border-tertiary/40 transition-colors shadow-xs">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover border border-tertiary/50" data-alt="Avatar portrait of ancient daoist sage with flowing golden cyber beard and cosmic hologram eyes, clean white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMFbuVZECLjEd9jsVJ-Rq8wlVoTvQyT_ksCX3IfvjfHIDp4aL0_6cTILyBCdoPOJWcTHJEdNqy77rpdrQBJ4RkkFKFlEEsDGI9abm5fGD-pdq9EwiNxtvdaFPBNT3ohGldjFMmEFLgvR8HNPWmhV7sBix4nM1a2NtFTTJ6hdPDOzodXuJaEnT7v5gUHkXCWUuQsOtfznjzFKJesLALtc_cF4cLDN48piw-I7pxYUk7e2BaRb3sS_zK"/>
+<span class="absolute -bottom-1 -right-1 text-[10px] font-bold px-1 rounded bg-amber-900/40 text-amber-300">#3</span>
+</div>
+<div class="flex-1 min-w-0">
+<h5 class="text-sm font-bold text-white truncate">Thái Hư Chân Nhân</h5>
+<p class="text-xs text-tertiary font-medium">Cảnh giới: Nguyên Anh Đỉnh Phong</p>
+</div>
+<span class="text-xs font-bold text-slate-300">940 giờ</span>
+</div>
+</div>
+<!-- Bottom Card: Gói Linh Thạch Nạp Tiên Vi -->
+<div class="p-4 rounded-xl bg-gradient-to-r from-primary/20 to-primary-container/10 border border-primary/30 mt-1 flex items-center justify-between gap-3">
+<div>
+<p class="text-xs font-bold text-white">Nạp Linh Thạch Viện Trợ</p>
+<p class="text-[11px] text-[#d0c5af]">Mở khóa tập mới sớm 7 ngày</p>
+</div>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary hover:bg-primary-fixed text-[#1a170f] text-xs font-bold transition-colors shadow-sm">
+          Khám Phá
+        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- LUXURY FOOTER (CYBER-XIANXIA DARK BRANDING) -->
+<footer class="bg-[#090b10] border-t border-white/10 py-12 px-6 lg:px-12 mt-12 text-[#d0c5af]">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-white/10">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 text-white">
+<div class="w-7 h-7 rounded bg-primary-container flex items-center justify-center text-[#1a170f]">
+<svg class="w-4 h-4" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-headline-sm font-bold text-base text-white">TIÊN GIỚI KỸ THUẬT SỐ</span>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed">
+        Nền tảng phát trực tuyến hoạt hình tu tiên và phim điện ảnh huyền huyễn chuẩn 4K HDR hàng đầu bát hoang lục hợp.
+      </p>
+</div>
+<div>
+<h5 class="text-xs font-label-sm font-bold uppercase tracking-wider text-white mb-3">Đạo Tàng Phim</h5>
+<ul class="flex flex-col gap-2 text-xs text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Bảng Xếp Hạng Tiên Môn</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Phim Độc Quyền VIP</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cơ Giáp &amp; Xuyên Không</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Lịch Chiếu Phim Mới</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-label-sm font-bold uppercase tracking-wider text-white mb-3">Tông Môn Hỗ Trợ</h5>
+<ul class="flex flex-col gap-2 text-xs text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Quy Định Đạo Hữu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Nạp Cực Phẩm Linh Thạch</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Chính Sách Bản Quyền</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Liên Hệ Trưởng Lão Các</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-label-sm font-bold uppercase tracking-wider text-white mb-3">Tải Ứng Dụng Ngự Kiếm</h5>
+<p class="text-xs text-slate-400 mb-3">Trải nghiệm xem phim mượt mà không quảng cáo trên mọi thiết bị.</p>
+<div class="flex gap-2">
+<div class="px-3 py-2 rounded-xl bg-white/[0.06] hover:bg-primary hover:text-black border border-white/10 text-xs font-bold text-white flex items-center gap-1.5 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">phone_iphone</span>
+<span>iOS App</span>
+</div>
+<div class="px-3 py-2 rounded-xl bg-white/[0.06] hover:bg-primary hover:text-black border border-white/10 text-xs font-bold text-white flex items-center gap-1.5 cursor-pointer transition-all">
+<span class="material-symbols-outlined text-sm">android</span>
+<span>Android</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+<p>© 2025 Tiên Giới Kỹ Thuật Số. All rights reserved. Bản quyền quy thuộc Cửu Thiên Tông Môn.</p>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Điều Khoản Tiên Môn</a>
+<a class="hover:text-primary transition-colors" href="#">Bảo Mật Linh Hồn</a>
+<a class="hover:text-primary transition-colors" href="#">Tốc Độ Phi Hành</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,23 @@
+# Dependencies and generated output
+node_modules
+.next
+out
+build
+coverage
+next-env.d.ts
+*.tsbuildinfo
+
+# Environment and package manager artifacts
+.env*
+.pnpm-store
+
+# Reference files are inputs, not application source
+.design
+.agents
+
+# Static binary assets
+public
+*.ico
+
+# Prettier does not parse indented Sass syntax
+*.sass

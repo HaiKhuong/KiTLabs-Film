@@ -1,0 +1,52 @@
+@use '../../../styles/variables' as *
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: .5rem
+  margin-top: 2.5rem
+  padding-top: 1.5rem
+  border-top: 1px solid $line
+
+  button
+    display: inline-flex
+    min-width: 36px
+    height: 36px
+    align-items: center
+    justify-content: center
+    gap: 4px
+    padding: 0 12px
+    color: $ink
+    font-size: .72rem
+    font-weight: 700
+    background: white
+    border: 1px solid $line
+    border-radius: 9px
+
+  &__group
+    display: contents
+
+    i
+      color: $slate
+      font-style: normal
+
+  &__page, &__page--active
+    padding: 0 !important
+
+  &__page--active
+    background: $gold !important
+    border-color: $gold !important
+
+html[data-theme='dark'] .pagination
+  border-color: #33343b
+
+  button
+    color: #a4b0c6
+    background: #191b22
+    border-color: rgba(white, .08)
+
+  .pagination__page--active
+    color: #0c0e14
+    background: #00e5cc !important
+    border-color: #00e5cc !important

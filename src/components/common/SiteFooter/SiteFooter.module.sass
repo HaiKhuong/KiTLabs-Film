@@ -1,0 +1,93 @@
+@use '../../../styles/variables' as *
+
+.footer
+  color: $slate
+  background: white
+  border-top: 1px solid $line
+
+  &__content
+    border-bottom: 1px solid $line
+
+  &__brand
+    a
+      color: $ink
+      text-decoration: none
+
+      > span
+        display: grid
+        width: 30px
+        height: 30px
+        place-items: center
+        color: $ink
+        background: linear-gradient(135deg, $gold-light, $gold)
+        border-radius: 7px
+
+    p
+      max-width: 430px
+      font-size: .72rem
+      line-height: 1.65
+
+    i
+      padding: 5px 8px
+      color: $amber
+      font-size: .6rem
+      font-style: normal
+      background: rgba($gold, .1)
+      border-radius: 5px
+
+  h2
+    margin: 0 0 .75rem
+    color: $ink
+    font-size: .72rem
+    text-transform: uppercase
+
+  nav a
+    display: block
+    margin: .55rem 0
+    color: $slate
+    font-size: .7rem
+    text-decoration: none
+
+    &:hover
+      color: $amber
+
+  &__app
+    p
+      font-size: .68rem
+      line-height: 1.55
+
+    button
+      display: flex
+      align-items: center
+      gap: 6px
+      padding: 8px 10px
+      color: $ink
+      font-size: .66rem
+      font-weight: 750
+      background: $gold-light
+      border: 0
+      border-radius: 7px
+
+  &__bottom
+    font-size: .62rem
+
+html[data-theme='dark'] .footer
+  color: #a4b0c6
+  background: #111319
+  border-color: #282a30
+
+  .footer__content
+    border-color: #282a30
+
+  .footer__brand a, h2
+    color: #e2e2eb
+
+  nav a
+    color: #a4b0c6
+
+    &:hover
+      color: #ffe088
+
+  .footer__brand i
+    color: #ffe088
+    background: rgba(212, 175, 55, .12)

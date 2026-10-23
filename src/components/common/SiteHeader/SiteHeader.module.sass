@@ -1,0 +1,327 @@
+@use '../../../styles/variables' as *
+
+.header
+  position: relative
+  z-index: 50
+  width: 100%
+  color: $ink
+  background: rgba(251, 251, 249, .9)
+  border-bottom: 1px solid rgba($line, .85)
+  backdrop-filter: blur(18px)
+
+  &--overlay
+    position: absolute
+    color: white
+    background: rgba(10, 12, 20, .28)
+    border-color: rgba(white, .13)
+
+  &__brand
+    color: inherit
+    text-decoration: none
+    white-space: nowrap
+
+    strong
+      display: block
+      font-size: .82rem
+      letter-spacing: -.02em
+
+    small
+      display: block
+      color: $gold-light
+      font-family: var(--font-label)
+      font-size: .58rem
+      letter-spacing: .16em
+      text-transform: uppercase
+
+  &__mark
+    display: grid
+    width: 34px
+    height: 34px
+    place-items: center
+    color: $ink
+    background: linear-gradient(135deg, $gold-light, $gold)
+    border-radius: 9px
+    box-shadow: 0 0 22px rgba($gold, .32)
+
+  &__nav a
+    color: inherit
+    font-size: .83rem
+    font-weight: 650
+    text-decoration: none
+    transition: color .2s
+
+    &:hover
+      color: $gold-light
+
+  &__search
+    height: 38px
+    padding: 0
+    color: rgba(white, .75)
+    background: rgba(white, .14)
+    border: 1px solid rgba(white, .2)
+    border-radius: 9px
+    cursor: pointer
+
+    kbd
+      height: 22px
+      align-items: center
+      padding: 0 .4rem
+      color: inherit
+      background: rgba(white, .1)
+      border: 1px solid currentColor
+      border-radius: 5px
+      font-family: inherit
+      font-size: .65rem
+      opacity: .7
+
+  &:not(.header--overlay) &__search
+    color: $slate
+    background: #f3f2ed
+    border-color: $line
+
+  &__login
+    height: 38px
+    color: $ink
+    font-size: .78rem
+    font-weight: 800
+    background: linear-gradient(135deg, $gold-light, $gold)
+    border: 0
+    border-radius: 9px
+    cursor: pointer
+
+  &__avatar
+    position: relative
+    width: 38px
+    height: 38px
+    place-items: center
+    color: $gold-light
+    background: rgba(white, .14)
+    border: 2px solid rgba($gold, .72)
+    border-radius: 50%
+
+    i
+      position: absolute
+      right: -1px
+      bottom: -1px
+      width: 9px
+      height: 9px
+      background: $jade
+      border: 2px solid white
+      border-radius: 50%
+
+  &__menu
+    display: grid
+    width: 40px
+    height: 40px
+    place-items: center
+    color: inherit
+    background: rgba(white, .13)
+    border: 1px solid rgba(white, .18)
+    border-radius: 9px
+
+    @media (min-width: 1280px)
+      display: none
+
+  &__theme
+    display: grid
+    width: 38px
+    height: 38px
+    flex: none
+    place-items: center
+    padding: 0
+    color: inherit
+    background: rgba(white, .1)
+    border: 1px solid rgba($gold, .4)
+    border-radius: 9px
+
+  &__drawer
+    position: absolute
+    top: 72px
+    left: 0
+    width: 100%
+    background: rgba(24, 23, 20, .97)
+
+    a
+      padding: .75rem 1rem
+      color: white
+      text-decoration: none
+      border-radius: 8px
+
+      &:hover
+        background: rgba($gold, .14)
+
+html[data-theme='dark'] .header
+  color: #e2e2eb
+  background: rgba(12, 14, 20, .86)
+  border-color: rgba(white, .08)
+
+  &--overlay
+    background: rgba(12, 14, 20, .75)
+
+  .header__search
+    color: #a4b0c6
+    background: rgba(white, .06)
+    border-color: rgba(white, .1)
+
+  .header__theme, .header__menu
+    color: #ffe088
+    background: #191b22
+    border-color: rgba(212, 175, 55, .35)
+
+.searchModal
+  position: fixed
+  z-index: 100
+  inset: 0
+  background: rgba(6, 7, 11, .7)
+  backdrop-filter: blur(10px)
+  animation: search-fade-in .16s ease-out
+
+  &__panel
+    width: min(640px, 100%)
+    overflow: hidden
+    color: $ink
+    background: #fbfbf9
+    border: 1px solid rgba($gold, .42)
+    border-radius: 16px
+    box-shadow: 0 24px 80px rgba(black, .42)
+    animation: search-panel-in .2s ease-out
+
+  &__input
+    height: 64px
+    color: $slate
+    border-bottom: 1px solid $line
+
+    input
+      min-width: 0
+      flex: 1
+      color: $ink
+      background: transparent
+      border: 0
+      outline: 0
+      font: inherit
+
+      &::placeholder
+        color: $slate
+
+    button
+      display: grid
+      width: 34px
+      height: 34px
+      place-items: center
+      padding: 0
+      color: $slate
+      background: transparent
+      border: 0
+
+  &__results
+    max-height: min(430px, 58vh)
+    overflow-y: auto
+    padding: .8rem
+
+    > p
+      margin: .25rem .55rem .65rem
+      color: $slate
+      font-size: .68rem
+      font-weight: 750
+      letter-spacing: .08em
+      text-transform: uppercase
+
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+
+    a
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 1rem
+      padding: .8rem .65rem
+      color: inherit
+      text-decoration: none
+      border-radius: 10px
+
+      &:hover, &:focus-visible
+        background: rgba($gold, .11)
+        outline: 0
+
+      span
+        min-width: 0
+
+      strong, small
+        display: block
+
+      strong
+        overflow: hidden
+        font-size: .88rem
+        text-overflow: ellipsis
+        white-space: nowrap
+
+      small
+        margin-top: .18rem
+        color: $slate
+        font-size: .7rem
+
+      b
+        flex: none
+        color: $amber
+        font-size: .66rem
+
+  &__empty
+    padding: 2.5rem 1rem
+    color: $slate
+    text-align: center
+
+  &__hint
+    min-height: 42px
+    color: $slate
+    background: #f3f2ed
+    border-top: 1px solid $line
+    font-size: .65rem
+
+    kbd
+      padding: .12rem .35rem
+      color: $ink
+      background: white
+      border: 1px solid $line
+      border-radius: 4px
+      font-family: inherit
+
+html[data-theme='dark'] .searchModal__panel
+  color: #e2e2eb
+  background: #15171e
+  border-color: rgba(212, 175, 55, .36)
+
+  .searchModal__input
+    color: #a4b0c6
+    border-color: #33343b
+
+    input
+      color: white
+
+  .searchModal__results
+    > p, small
+      color: #a4b0c6
+
+    a:hover, a:focus-visible
+      background: rgba(212, 175, 55, .12)
+
+  .searchModal__hint
+    color: #a4b0c6
+    background: #111319
+    border-color: #33343b
+
+    kbd
+      color: white
+      background: #20232c
+      border-color: #3a3d47
+
+@keyframes search-fade-in
+  from
+    opacity: 0
+
+@keyframes search-panel-in
+  from
+    opacity: 0
+    transform: translateY(-12px) scale(.98)
+

@@ -1,0 +1,670 @@
+@use '../../styles/variables' as *
+@use '../../styles/mixins' as *
+
+.detail
+  min-height: 100vh
+  background: $snow
+
+  &__heading
+    margin: .25rem 0 0
+    font-family: var(--font-display)
+    font-size: clamp(1.7rem, 3vw, 2.4rem)
+
+  &__stage
+    position: relative
+    padding: 1rem clamp(1rem, 3.4vw, 3rem) 0
+    background: radial-gradient(circle at 50% 0, rgba($gold, .13), transparent 42%)
+
+  &__breadcrumb
+    max-width: 1440px
+    margin: 0 auto 1rem
+    padding: .7rem 1rem
+    color: $slate
+    font-family: var(--font-label)
+    font-size: .68rem
+    background: rgba(white, .82)
+    border: 1px solid rgba($line, .75)
+    border-radius: 10px
+    backdrop-filter: blur(12px)
+
+    a
+      color: inherit
+      text-decoration: none
+
+    strong
+      overflow: hidden
+      max-width: 340px
+      color: $ink
+      text-overflow: ellipsis
+      white-space: nowrap
+
+  &__live
+    display: inline-flex
+    align-items: center
+    gap: 6px
+    color: $jade
+
+    i
+      width: 7px
+      height: 7px
+      background: $jade
+      border-radius: 50%
+      box-shadow: 0 0 0 4px rgba($jade, .12)
+
+  &__more
+    color: $amber
+    font-size: .8rem
+    font-weight: 700
+    text-decoration: none
+
+.player
+  position: relative
+  max-width: 1440px
+  margin: 0 auto
+  aspect-ratio: 16 / 7.6
+  overflow: hidden
+  color: white
+  background: #080a0e
+  border-radius: 16px
+  box-shadow: 0 22px 48px rgba($ink, .2)
+
+  +respond-below('md')
+    aspect-ratio: 16 / 9
+    border-radius: 11px
+
+  img
+    object-fit: cover
+
+  &__veil
+    position: absolute
+    inset: 0
+    background: linear-gradient(0deg, rgba(4, 5, 8, .9), rgba(4, 5, 8, .12) 65%), rgba(4, 5, 8, .28)
+
+  &__button
+    position: absolute
+    top: 50%
+    left: 50%
+    display: grid
+    width: 76px
+    height: 76px
+    place-items: center
+    color: $ink
+    background: linear-gradient(135deg, $gold-light, $gold)
+    border: 0
+    border-radius: 50%
+    box-shadow: 0 0 45px rgba($gold, .5)
+    transform: translate(-50%, -50%)
+    cursor: pointer
+
+  &__top
+    position: absolute
+    top: 16px
+    right: 16px
+    left: 16px
+    z-index: 3
+    font-size: .7rem
+
+    > span
+      display: flex
+      align-items: center
+      gap: 7px
+      max-width: 620px
+      padding: 7px 12px
+      color: $ink
+      background: rgba(white, .82)
+      border-radius: 999px
+      backdrop-filter: blur(9px)
+
+      i
+        width: 8px
+        height: 8px
+        background: #ba1a1a
+        border-radius: 50%
+
+      b
+        padding: 2px 5px
+        background: $gold-light
+        border-radius: 4px
+
+    button
+      display: grid
+      width: 34px
+      height: 34px
+      place-items: center
+      color: $ink
+      background: rgba(white, .82)
+      border: 0
+      border-radius: 50%
+
+  &__hud
+    position: absolute
+    right: 4%
+    bottom: 6%
+    left: 4%
+    padding: 26px 16px 12px
+    font-family: var(--font-label)
+    font-size: .7rem
+    background: rgba(12, 14, 20, .72)
+    border: 1px solid rgba(white, .15)
+    border-radius: 12px
+    backdrop-filter: blur(13px)
+
+  &__chapter
+    color: rgba(white, .85)
+    font-family: var(--font-label)
+    font-size: .62rem
+
+    span:first-child
+      color: $gold-light
+
+  &__timeline
+    position: relative
+    height: 5px
+    margin: 9px 0 12px
+    background: rgba(white, .25)
+    border-radius: 99px
+
+    span
+      display: block
+      width: 63%
+      height: 100%
+      background: linear-gradient(90deg, $amber, $gold-light)
+      border-radius: inherit
+
+    i
+      position: absolute
+      top: 50%
+      left: 63%
+      width: 13px
+      height: 13px
+      background: $gold-light
+      border: 2px solid white
+      border-radius: 50%
+      box-shadow: 0 0 10px $gold-light
+      transform: translate(-50%, -50%)
+
+  &__controls
+    color: white
+    font-size: .63rem
+
+    span
+      align-items: center
+
+    em
+      display: flex
+      align-items: center
+      gap: 4px
+      padding: 4px 8px
+      color: $ink
+      font-style: normal
+      font-weight: 800
+      background: $gold
+      border-radius: 999px
+
+.info, .episodes
+  background: rgba(white, .86)
+  border: 1px solid rgba($line, .9)
+  border-radius: 18px
+  box-shadow: 0 14px 36px -22px rgba($ink, .2)
+
+.info
+  &__poster
+    position: relative
+    width: 100%
+    max-width: 280px
+    aspect-ratio: 2 / 3
+    overflow: hidden
+    background: #e9e6de
+    border: 1px solid rgba($gold, .35)
+    border-radius: 13px
+    box-shadow: 0 15px 35px rgba($ink, .16)
+
+    img
+      object-fit: cover
+
+    span
+      position: absolute
+      right: 10px
+      bottom: 10px
+      padding: 5px 9px
+      color: white
+      font-family: var(--font-label)
+      font-size: .65rem
+      font-weight: 800
+      background: rgba($jade, .88)
+      border-radius: 6px
+
+    > b
+      position: absolute
+      top: 10px
+      left: 10px
+      z-index: 2
+      padding: 5px 8px
+      color: $ink
+      font-family: var(--font-label)
+      font-size: .58rem
+      letter-spacing: .06em
+      background: linear-gradient(90deg, $gold, $gold-light)
+      border-radius: 5px
+
+  &__stats
+    max-width: 280px
+    overflow: hidden
+    background: #f3f2ed
+    border-radius: 10px
+
+    > span
+      padding: .65rem .3rem
+      text-align: center
+      border-right: 1px solid $line
+
+      &:last-child
+        border: 0
+
+    b, small
+      display: block
+
+    b
+      color: $amber
+      font-size: .9rem
+
+    small
+      margin-top: 2px
+      color: $slate
+      font-size: .53rem
+
+  &__kicker
+    margin: 0
+    color: $amber
+    font-family: var(--font-label)
+    font-size: .66rem
+    font-weight: 800
+    letter-spacing: .12em
+
+  h1
+    margin: .35rem 0 .25rem
+    font-family: var(--font-display)
+    font-size: clamp(2rem, 4.3vw, 3.7rem)
+    line-height: 1.04
+
+  &__subtitle
+    margin: 0
+    color: $slate
+    font-family: var(--font-display)
+    font-style: italic
+
+  &__chip, &__vip
+    padding: 6px 10px
+    color: $jade
+    font-family: var(--font-label)
+    font-size: .65rem
+    font-weight: 700
+    background: rgba($jade, .09)
+    border-radius: 999px
+
+  &__vip
+    color: $ink
+    background: $gold-light
+
+  &__primary, &__action, &__icon
+    display: inline-flex
+    min-height: 42px
+    align-items: center
+    justify-content: center
+    gap: 7px
+    padding: 0 14px
+    color: $ink
+    font-size: .76rem
+    font-weight: 750
+    background: #f2f0ea
+    border: 0
+    border-radius: 9px
+    cursor: pointer
+
+  &__primary
+    background: linear-gradient(135deg, $gold-light, $gold)
+    box-shadow: 0 5px 20px rgba($gold, .27)
+
+  &__icon
+    width: 42px
+    padding: 0
+
+  &__synopsis
+    padding: 1rem
+    background: #f6f4ef
+    border-radius: 10px
+
+    strong
+      color: $amber
+      font-family: var(--font-label)
+      font-size: .67rem
+      letter-spacing: .1em
+      text-transform: uppercase
+
+    p
+      margin: .45rem 0 0
+      color: #535b68
+      font-size: .84rem
+      line-height: 1.75
+
+  dl
+    margin: 0
+
+  dt
+    color: $slate
+    font-family: var(--font-label)
+    font-size: .61rem
+    text-transform: uppercase
+
+  dd
+    margin: .25rem 0 0
+    font-size: .76rem
+    font-weight: 700
+
+.episodes
+  span
+    color: $jade
+    font-family: var(--font-label)
+    font-size: .65rem
+    font-weight: 800
+    letter-spacing: .1em
+
+  h2
+    margin: .25rem 0 0
+    font-family: var(--font-display)
+    font-size: 1.8rem
+
+  p
+    margin: 0
+    color: $slate
+    font-size: .75rem
+
+  &__item, &__item--active
+    display: flex
+    height: 50px
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: $ink
+    font-weight: 750
+    background: #f2f0ea
+    border: 1px solid transparent
+    border-radius: 8px
+    cursor: pointer
+
+    small
+      color: $slate
+      font-size: .57rem
+
+  &__item--active
+    background: $gold-light
+    border-color: $gold
+    box-shadow: 0 0 18px rgba($gold, .23)
+
+.community
+  &__forum, &__aside > div
+    padding: clamp(1.25rem, 2vw, 1.75rem)
+    background: white
+    border: 1px solid $line
+    border-radius: 16px
+    box-shadow: 0 8px 24px rgba($ink, .04)
+
+  &__forum
+    > div:first-child
+      span
+        color: $amber
+        font-family: var(--font-label)
+        font-size: .62rem
+        font-weight: 800
+
+      h3
+        margin: .25rem 0 0
+        font-family: var(--font-display)
+        font-size: 1.4rem
+
+      > b
+        display: flex
+        align-items: center
+        gap: 5px
+        color: $slate
+        font-size: .65rem
+
+    article
+      padding: 1rem 0
+      border-bottom: 1px solid rgba($line, .75)
+
+      > strong, .community__composer > span
+        display: grid
+        width: 34px
+        height: 34px
+        flex: none
+        place-items: center
+        color: $ink
+        background: $gold-light
+        border-radius: 50%
+        font-size: .7rem
+
+      h4
+        margin: 0
+        color: $ink
+        font-size: .75rem
+
+      p
+        margin: .35rem 0
+        color: #535b68
+        font-size: .72rem
+        line-height: 1.6
+
+      small
+        display: flex
+        align-items: center
+        gap: 5px
+        color: $slate
+        font-size: .6rem
+
+  &__composer
+    display: flex
+    gap: .65rem
+    margin: 1rem 0 .25rem
+    padding: .7rem
+    background: #f5f4ef
+    border-radius: 10px
+
+    > span
+      display: grid
+      width: 34px
+      height: 34px
+      flex: none
+      place-items: center
+      color: $ink
+      font-size: .65rem
+      font-weight: 800
+      background: $gold-light
+      border-radius: 50%
+
+    input
+      min-width: 0
+      flex: 1
+      background: transparent
+      border: 0
+      outline: 0
+
+    button
+      display: grid
+      width: 34px
+      place-items: center
+      color: white
+      background: $jade
+      border: 0
+      border-radius: 8px
+
+  &__aside
+    > div > span
+      color: $jade
+      font-family: var(--font-label)
+      font-size: .6rem
+      font-weight: 800
+
+    h3
+      margin: .25rem 0 1rem
+      font-family: var(--font-display)
+      font-size: 1.25rem
+
+    a
+      padding: .65rem 0
+      color: $ink
+      text-decoration: none
+      border-bottom: 1px solid $line
+
+      > div
+        position: relative
+        width: 82px
+        height: 52px
+        flex: none
+        overflow: hidden
+        border-radius: 7px
+
+      img
+        object-fit: cover
+
+      b, small
+        display: block
+
+      b
+        font-size: .68rem
+
+      small
+        margin-top: 5px
+        color: $slate
+        font-size: .58rem
+
+  &__upgrade
+    color: white
+    background: linear-gradient(135deg, #20241e, #123c38) !important
+    border-color: rgba($gold, .35) !important
+
+    h4
+      margin: .6rem 0
+      font-size: 1rem
+
+    p
+      color: #c5ccd0
+      font-size: .7rem
+      line-height: 1.55
+
+    button
+      padding: 8px 11px
+      color: $ink
+      font-size: .65rem
+      font-weight: 800
+      background: $gold-light
+      border: 0
+      border-radius: 7px
+
+html[data-theme='dark'] .detail
+  color: #e2e2eb
+  background: #0c0e14
+
+  .detail__stage
+    background: radial-gradient(circle at 50% 0, rgba(242, 202, 80, .1), transparent 42%)
+
+  .detail__breadcrumb
+    color: #a4b0c6
+    background: rgba(18, 22, 32, .72)
+    border-color: rgba(white, .07)
+
+    strong
+      color: #e2e2eb
+
+  .detail__live
+    color: #6fffe8
+
+    i
+      background: #00e5cc
+      box-shadow: 0 0 0 4px rgba(0, 229, 204, .13), 0 0 12px rgba(0, 229, 204, .5)
+
+  .info, .episodes
+    color: #e2e2eb
+    background: rgba(21, 25, 35, .88)
+    border-color: rgba(white, .07)
+    box-shadow: 0 16px 36px rgba(black, .22)
+
+  .info
+    h1
+      color: white
+
+    &__subtitle, dt
+      color: #a4b0c6
+
+    dd
+      color: #e2e2eb
+
+    &__chip
+      color: #6fffe8
+      background: rgba(0, 229, 204, .1)
+
+    &__stats, &__action, &__icon, &__synopsis
+      background: #1e1f26
+
+    &__stats > span
+      border-color: #33343b
+
+    &__synopsis
+      p
+        color: #a4b0c6
+
+  .episodes
+    > div:first-child
+      border-color: #33343b
+
+    h2
+      color: white
+
+    &__item
+      color: #e2e2eb
+      background: #1e1f26
+      border-color: rgba(white, .04)
+
+      small
+        color: #a4b0c6
+
+    &__item--active
+      color: #0c0e14
+      background: #00e5cc
+      border-color: #00e5cc
+      box-shadow: 0 0 18px rgba(0, 229, 204, .35)
+
+  .community
+    &__forum, &__aside > div
+      color: #e2e2eb
+      background: #151923
+      border-color: rgba(white, .07)
+      box-shadow: 0 10px 28px rgba(black, .2)
+
+    &__forum
+      > div:first-child, article
+        border-color: #33343b
+
+      h3, h4
+        color: white
+
+      article p
+        color: #a4b0c6
+
+    &__composer
+      background: #1e1f26
+
+      input
+        color: #e2e2eb
+
+    &__aside
+      h3, a
+        color: white
+
+      a
+        border-color: #33343b
+
+  .detail__heading
+    color: white
+
+
